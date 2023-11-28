@@ -1,0 +1,7 @@
+Game/Data/*
+Engine/Logs/*
+.vscode/*
+.vscode/tasks.json
+Game/Assets/Backgrounds/*
+Game/Assets/Music/*
+Game/Assets/Speakers/*
