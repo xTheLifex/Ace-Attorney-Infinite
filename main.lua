@@ -54,7 +54,7 @@ Press R to reset all configuration.
 	engine.Log("[Core] " .. "Loaded entities module.")
 	require("Engine/rendering")
 	engine.Log("[Core] " .. "Loaded rendering module.")
-	require("Engine/Systems/audio")
+	require("Engine/audio")
 	engine.Log("[Core] " .. "Loaded audio module.")
 
 	if (intro) then

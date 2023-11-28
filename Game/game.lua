@@ -19,12 +19,7 @@ end
 hooks.Add("OnGameLoad", function() 
 	local musicPath = "Game/Assets/Music"
 	local music = engine.audio.ImportMusic(musicPath, "[AAI] Shi-Long Lang - Speak Up, Pup!" .. ".ogg") or {name = "ERROR"}
-	local secondMusic = engine.audio.ImportMusic(musicPath, "[AAI] Objection!" .. ".ogg") or {name = "ERROR"}
 	engine.audio.PlayMusic(music.name)
-
-	Delay(5, function()
-		engine.audio.PlayMusic(secondMusic.name)
-	end)
 end)
 
 hooks.Add("OnGameDraw", function ()	

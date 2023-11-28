@@ -3,6 +3,18 @@ engine.music = engine.music or {}
 engine.audio = engine.audio or {}
 engine.sound = engine.sound or {}
 
+-- ------------------------------------ - ----------------------------------- ---- ------------------------------------ - ----------------------------------- --
+-- LÖVE supports a lot of audio formats, thanks to the love.sound module, which handles all the decoding. 
+-- Supported formats include:
+--     MP3
+--     Ogg Vorbis
+--     WAVE
+--     and just about every tracker format you can think of - XM, MOD, and over twenty others.
+-- Ogg Vorbis and 16-bit WAVE are the recommended formats. Others may have minor quirks. 
+-- For example, the MP3 decoder may pad a few samples depending on what encoder was used. 
+-- These issues come from the libraries LÖVE uses to decode the audio files and can't be fixed in LÖVE directly
+-- ------------------------------------ - ----------------------------------- ---- ------------------------------------ - ----------------------------------- --
+
 -- Current playing sounds.
 engine.currentSounds = {}
 
