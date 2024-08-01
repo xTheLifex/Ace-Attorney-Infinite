@@ -17,7 +17,7 @@ local function LoadGame()
     hooks.Fire("OnGameLoad")
     hooks.Fire("PostGameLoad")
 end
-
+s
 
 local function DrawIntro()
     if (not intro:isPlaying()) then

@@ -5,7 +5,6 @@ engine.entities.lastID = 0
 engine.world = engine.world or {}
 engine.world.entities = engine.world.entities or {}
 engine.world.size = engine.world.size or Vector(2048,2048)
-engine.entities.DEFAULT_FPS = 12
 
 -- -------------------------------------------------------------------------- --
 --                          Entity Creation Function                          --

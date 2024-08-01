@@ -7,12 +7,6 @@ local BASE_SPEED = 15
 local MAX_ZOOM = 2
 local MIN_ZOOM = 0.5
 
-love.graphics.setLineStyle('rough')
-love.graphics.setDefaultFilter("nearest", "nearest")
-
-engine.rendering.missingtexture = love.graphics.newImage("Engine/Resources/missing.png")
-
--- Returns the current camera zoom
 engine.rendering.GetZoom = function() 
 	return engine.rendering.camera.scale or 1
 end

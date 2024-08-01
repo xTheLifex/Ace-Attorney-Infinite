@@ -42,4 +42,10 @@ function engine.Log(text, color)
 
     print(out)
 end
+
+function engine.LogModule(module, text)
+    assert(isstring(module), utils.error.TYPE(module, "module", "string"))
+    assert(isstring(text), utils.error.TYPE(text, "text", utils.GetType()))
+    engine.Log("[" .. module .."]")
+end
 Log = engine.Log
