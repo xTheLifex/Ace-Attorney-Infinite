@@ -335,8 +335,6 @@ end)
 --                                  Debugging                                 --
 -- -------------------------------------------------------------------------- --
 
-engine.AddCVar("debug_entities", false, "Enable the debugging of entity information")
-
 hooks.Add("PostGameDraw", function() 
 	-- Debug information
 	if (engine.GetCVar("debug_entities", false) == false) then return end

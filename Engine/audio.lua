@@ -67,11 +67,11 @@ engine.audio.Import = function (path, clip, type)
 end
 
 engine.audio.ImportMusic = function (path, clip)
-    return engine.audio.Import(path, clip, "music")
+    return engine.audio.Import(path, clip, "music") or {name = "Missing Music File"}
 end
 
 engine.audio.ImportSound = function (path, clip)
-    return engine.audio.Import(path, clip, "sound")
+    return engine.audio.Import(path, clip, "sound") or {name = "Missing Audio File"}
 end
 -- -------------------------------------------------------------------------- --
 --                                   Playing                                  --

@@ -36,7 +36,7 @@ function love.load()
 		engine.Log([[Engine is now in commandline mode. Quit protection aborted.
 Press Q to quit.
 Press C to clear all logs.
-Press R to reset all configuration.
+Press R to reset all configuration. (NOT IMPLEMENTED YET)
 		]])
 
 		engine.Log("Build finished.")
@@ -128,31 +128,6 @@ function love.keypressed(key, scancode, isrepeat)
 		end
 
 		hooks.Fire("OnKeyPressed", key, scancode, isrepeat)
-		return
-	end
-
-	if (scancode == "f12" and not isrepeat) then
-		local v = engine.GetCVar("debug_hooks", false)
-		engine.SetCVar("debug_hooks", not v)
-		engine.SetCVar("debug_cvars", not v)
-		return
-	end
-
-	if (scancode == "f6" and not isrepeat) then
-		local v = engine.GetCVar("debug_rendering", false)
-		engine.SetCVar("debug_rendering", not v)
-		return
-	end
-
-	if (scancode == "f3" and not isrepeat) then
-		local v = engine.GetCVar("debug_entities", false)
-		engine.SetCVar("debug_entities", not v)
-		return
-	end
-
-	if (scancode == "f2" and not isrepeat) then
-		local v = engine.GetCVar("debug_physics", false)
-		engine.SetCVar("debug_physics", not v)
 		return
 	end
 

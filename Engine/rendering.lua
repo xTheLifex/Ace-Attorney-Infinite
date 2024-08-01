@@ -36,11 +36,6 @@ engine.rendering.GetCameraSpeed = function()
 	return speed
 end
 
-
-hooks.Add("OnSetupCVars", function()
-    engine.AddCVar("debug_rendering", false, "Enable/Disable debugging information about Rendering.")
-end)
-
 hooks.Add("OnCameraAttach", function()
 	engine.rendering.camera:attach()
 end)
